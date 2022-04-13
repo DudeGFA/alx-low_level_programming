@@ -18,7 +18,6 @@ void times_table(void)
 		z++;
 	}
 	_putchar('\n');
-	int b = 1;
 	while(b <= 9)
 	{
 		int a = 1;
