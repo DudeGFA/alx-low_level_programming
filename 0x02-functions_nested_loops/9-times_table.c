@@ -4,23 +4,26 @@
  * times_table - prints times table
  * Return:void
  */
-
 void times_table(void)
 {	
 	_putchar('0');
 	_putchar(',');
 	_putchar(' ');
-	for(int z = 1; z <= 8; z++)
+	int z = 1
+	while(z <= 8;)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar('0');
+		z++
 	}
 	_putchar('\n');
-	for(int b = 1; b <= 9; b++)
+	int b = 1;
+	for(b <= 9)
 	{
-		for(int a = 1; b <= 8; b++)
+		int a = 1; 
+		for(a <= 8)
 		{
 			_putchar('0');
 			_putchar(',');
@@ -33,7 +36,7 @@ void times_table(void)
 			a++
 		}		
 		_putchar('c');
-		_putchar(\n);
+		_putchar('\n');
 		b++
 	}		
  }
