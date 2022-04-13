@@ -9,7 +9,7 @@ int _abs(int n)
 {
 	if (n > 0)
 	{
-		n = n
+		n = n;
 	}
 	else if (n < 0)
 	{
@@ -17,7 +17,7 @@ int _abs(int n)
 	}
 	else
 	{
-		n = 0
+		n = 0;
 	}
 	return (n);
 }
