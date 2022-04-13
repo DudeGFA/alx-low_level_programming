@@ -12,7 +12,7 @@ void jack_bauer(void)
 	{
 		if (a < 2)
 		{
-			int b = 0:
+			int b = 0;
 				
 			while (b < 10)
 			{
@@ -24,13 +24,13 @@ void jack_bauer(void)
 
 					while (d < 10)
 					{
-					 _putchar('0' + a)
-					 _putchar('0' + b)
-					 _putchar(':')
-					 _putchar('0' + c)
-					 _putchar('0' + d)
-					 _putchar('\n')
-					d++;
+						_putchar('0' + a);
+						_putchar('0' + b);
+						_putchar(':');
+						_putchar('0' + c);
+						_putchar('0' + d);
+						_putchar('\n');
+						d++;
 					}
 					c++;
 				}
@@ -52,19 +52,19 @@ void jack_bauer(void)
 
 					while (d < 10)
 					{
-						_putchar('0' + a)
-						_putchar('0' + b)
-					 	_putchar(':')
-						_putchar('0' + c)
-						_putchar('0' + d)
-						_putchar('\n')
+						_putchar('0' + a);
+						_putchar('0' + b);
+					 	_putchar(':');
+						_putchar('0' + c);
+						_putchar('0' + d);
+						_putchar('\n');
 						d++;
 					}
 					c++;
 				}
-				b++:
+				b++;
 			}
-			a++:
+			a++;
 		}
 	}
 }
