@@ -5,7 +5,7 @@
 * @n : character to be checked
 * Return: 0 or 1
 */
-int _abs(int)
+int _abs(int n)
 {
 	int n;
 
@@ -15,7 +15,7 @@ int _abs(int)
 	}
 	else if (n < 0)
 	{
-		n = n*(-1)
+		n = n*(-1);
 		_putchar(n);
 	}
 	else
