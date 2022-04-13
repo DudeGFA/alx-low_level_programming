@@ -1,71 +1,42 @@
-#include "main.h"
-
-/**
- * jack_bauer - prints every minute of the day of Jack Bauer
- * Return:void
- */
 void jack_bauer(void)
 {
-	int a = 0;
-	
-	while (a < 3)
+
+int h1;
+int h2;
+int m1;
+int m2;
+int a = 9;
+
+h2 = 0;
+while (h2 <= 2)
+{
+	if (h2 == 2)
 	{
-		if (a < 2)
-		{
-			int b = 0;
-				
-			while (b < 10)
-			{
-				int c = 0;
-					
-				while (c < 6)
-				{
-					int d = 0;
-
-					while (d < 10)
-					{
-						_putchar('0' + a);
-						_putchar('0' + b);
-						_putchar(':');
-						_putchar('0' + c);
-						_putchar('0' + d);
-						_putchar('\n');
-						d++;
-					}
-					c++;
-				}
-				b++;
-			}
-			a++;
-		}
-		else
-		{
-			int b = 0;
-
-			while (b < 4)
-			{
-				int c = 0;
-
-				while (c < 6)
-				{
-					int d = 0;
-
-					while (d < 10)
-					{
-						_putchar('0' + a);
-						_putchar('0' + b);
-					 	_putchar(':');
-						_putchar('0' + c);
-						_putchar('0' + d);
-						_putchar('\n');
-						d++;
-					}
-					c++;
-				}
-				b++;
-			}
-			a++;
-		}
+		/*Restrain to 23h, not 29*/
+		a = 3;
 	}
+	h1 = 0;
+	while (h1 <= a)
+	{
+		m2 = 0;
+		while (m2 <= 5)
+		{
+			m1 = 0;
+			while (m1 <= 9)
+			{
+				_putchar('0' + h2);
+				_putchar('0' + h1);
+				_putchar(':');
+				_putchar('0' + m2);
+				_putchar('0' + m1);
+				_putchar('\n');
+				m1++;
+			}
+			m2++;
+		}
+		h1++;
+	}
+	h2++;
 }
-	
+
+}
