@@ -5,12 +5,9 @@
  * Return:void
  */
 void times_table(void)
-{	
-	_putchar('0');
-	_putchar(',');
-	_putchar(' ');
-	int z;
-	z = 1
+{
+	int z = 1;
+	
 	while(z <= 8)
 	{
 		_putchar('0');
