@@ -4,6 +4,7 @@
 * _isalpha - entry point
 * @c : character to be checked
 * Return: 0 or 1
+*/
 int _isalpha(int c)
 {
     if(c >= 'a' && c <= 'z')
