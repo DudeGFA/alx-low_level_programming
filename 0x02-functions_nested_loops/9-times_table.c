@@ -9,21 +9,22 @@ void times_table(void)
 	_putchar('0');
 	_putchar(',');
 	_putchar(' ');
-	int z = 1
-	while(z <= 8;)
+	int z;
+	z = 1
+	while(z <= 8)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar('0');
-		z++
+		z++;
 	}
 	_putchar('\n');
 	int b = 1;
-	for(b <= 9)
+	while(b <= 9)
 	{
 		int a = 1; 
-		for(a <= 8)
+		while(a <= 8)
 		{
 			_putchar('0');
 			_putchar(',');
@@ -33,11 +34,11 @@ void times_table(void)
 			_putchar(c);
 			_putchar(',');
 			_putchar(' ');
-			a++
+			a++;
 		}		
 		_putchar('c');
 		_putchar('\n');
-		b++
+		b++;
 	}		
  }
 		
