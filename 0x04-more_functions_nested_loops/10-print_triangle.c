@@ -12,16 +12,20 @@ void main(int size)
 
 	if (size <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 	else
 	{	
 		while (i <= size)
         	{
 			for (j = i; j <= (size - 1); j++)
-				putchar(' ');
+			{
+				_putchar(' ');
+			}
 			for (k = (size - i); k < j; k++)
-				putchar('#');
+			{
+				_putchar('#');
+			}
 			putchar('\n');
 			i++;
         	}
