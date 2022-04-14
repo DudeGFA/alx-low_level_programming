@@ -26,7 +26,7 @@ void main(int size)
 			{
 				_putchar('#');
 			}
-			putchar('\n');
+			_putchar('\n');
 			i++;
         	}
 	}
