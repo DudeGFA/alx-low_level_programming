@@ -1,22 +1,37 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * puts2 -print every other charachter of a string
- * @str: string
+ *puts_half - print half string
+ *@str: string
  *
- * Return: nothing
+ *Return: nothing
  */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int i;
+	int i = 0;
+	int j = 0;
 
-	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
-		if (i % 2 == 0)
-		_putchar(str[i]);
 		i++;
+	}
+	if (i % 2 == 0)
+	{
+		for (j = 0; str[j] != '\0'; j++)
+		{
+			if (j >= i / 2)
+				_putchar(str[j]);
+		}
+	}
+	else
+	{
+		for (j = 0; str[j] != '\0'; j++)
+		{
+			if (j > i / 2)
+				_putchar(str[j]);
+		}
 	}
 	_putchar('\n');
 }
