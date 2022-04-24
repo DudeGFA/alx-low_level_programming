@@ -3,7 +3,7 @@
  * _strncat - concatenates two strings
  * @dest: input parameter string
  * @src: input parameter string
- *
+ * @n: number of copied char
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
