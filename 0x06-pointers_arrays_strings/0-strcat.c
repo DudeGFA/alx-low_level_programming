@@ -8,29 +8,31 @@
  */
 char *_strcat(char *dest, char *src)
 {
-    int i, j, n;
+	int i = 0, j = 0, n = 0, k = 0;
+	while (dest[i])
+	{
+		i++;
+	}
+	char pen[i];
 
-    for (i = 0;dest[i];i++);
-    {
-    }
-    char pen[i];
+	while (dest[n])
+	{
+		pen[n] = dest[n];
+		n++;
+	}
+	while (src[j])
+	{
+		j++;
+	}
+ 	int s = i + j;
 
-    for (n = 0;dest[n];n++);
-    {
-        pen[n] = dest[n];
+	while (k <= s)
+	{
+		if(k <= i)
+			dest[k] = pen[k];
+		else
+			dest[k] = src[k];
+		k++;
     }
-    for (j = 0;src[j];j++);
-    {
-    }
-    int s = i + j;
-    int k;
-
-    for (k = 0;k <= s;k++);
-    {
-        if(k <= i)
-            dest[k] = pen[k];
-        else
-            dest[k] = src[k];
-    }
-    return dest;
+    return (dest);
 }
