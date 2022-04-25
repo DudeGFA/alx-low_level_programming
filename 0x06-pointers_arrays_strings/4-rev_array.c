@@ -5,12 +5,11 @@
  * @n - length of array
  * Return: nothing
  */
- 
-void reverse_array(int *a, int n)
+ void reverse_array(int *a, int n)
 {
 	int i = 0;
 	int c;
- 
+
 	while (i <= (n / 2))
 	{
 		c = *(a + i);
