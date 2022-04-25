@@ -3,7 +3,8 @@
  * _strncat - concatenates two strings
  * @dest: input parameter string
  * @src: input parameter string
- * @n: number of copied char
+ * @n: times to iterations
+ *
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -20,7 +21,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	b = 0;
 
-	while (b < n)
+	while (src[b] != 0 && b < n)
 	{
 		dest[a] = src[b];
 		a++;
