@@ -15,11 +15,11 @@ int prime(int a, int b)
 	if (b < a)
 	{
 		if ((a % b) == 0)
-			return (1);
+			return (0);
 		b = b + 1;
 		return (prime(a, b));
 	}
-	return (0);
+	return (1);
 }
 /**
  * is_prime_number - determines if @n is a prime number
