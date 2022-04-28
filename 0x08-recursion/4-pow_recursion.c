@@ -7,11 +7,11 @@
  */
 int _pow_recursion(int x, int y)
 {
-	int d = y - 1;
+	if (y == 0 )
+		return (1);
+	y = y - 1;
 	int p;
 
-	if (d == 0)
-		return (1);
-	p = x * _pow_recursion(x, d);
+	p = x * _pow_recursion(x, y);
 	return (p);
 }
