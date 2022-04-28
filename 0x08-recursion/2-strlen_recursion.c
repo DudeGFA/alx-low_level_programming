@@ -5,7 +5,7 @@
  * Return - int
  */
 int _strlen_recursion(char *s)
-	int p;
+	int p = 0;
 	
 	if (*s = '\0')
 		return (1)
