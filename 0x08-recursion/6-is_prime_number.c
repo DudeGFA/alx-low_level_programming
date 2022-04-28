@@ -8,7 +8,7 @@
  */
 int prime(int a, int b)
 {
-	if (a <= 0)
+	if (a <= 1)
 	{
 		return (0);
 	}
@@ -24,7 +24,6 @@ int prime(int a, int b)
 /**
  * is_prime_number - determines if @n is a prime number
  * @n: parameter
- * 
  * Return: 0 or 1
  */
 int is_prime_number(int n)
