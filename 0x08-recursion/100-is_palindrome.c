@@ -8,7 +8,7 @@ int palindrome(char *a, int b)
 {
 	if (*(a + 1) != '\0')
 		return (1 + palindrome(a + 1, b));
-	return (0);
+	return (1);
 }
 int _palindrome(char *c, int d)
 {
