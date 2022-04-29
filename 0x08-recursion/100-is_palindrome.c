@@ -1,38 +1,50 @@
-#include "main.h"
+#include"main.h"
+#include<stdio.h>
 /**
- * is_palindrome - returns 1 if @s is a palindrome
- * @s: parameter
- * Return: 1 or 0
+ * _strlen_recursion - length str
+ * @str: pointer
+ *
+ * Return: int
  */
-/**
- * palindrome - returns length of string
- * @a: parameter 
- * @b: parameter
- * Return: 1 or 0
- */
-/**
- * _palindrome - detects palindrome
- * @c: parameter
- * @d: parameter
- * Return: 1 or 0
- */
-int palindrome(char *a, int b)
+int _strlen_recursion(char *str)
 {
-	if (*(a + 1) != '\0')
-		return (1 + palindrome(a + 1, b));
-	return (1);
+	int a;
+
+	if (*str == '\0')
+		return (0);
+	str++;
+	a = 1 + _strlen_recursion(str);
+	return (a);
 }
-int _palindrome(char *c, int d)
+/**
+ * _palindrome - function
+ * @i: intger
+ * @l: integer
+ * @p: pointer
+ *
+ * Return: integer
+ */
+int _palindrome(int l, int i, char *p)
 {
-	if ((c + d) == (c - 1 - d + palindrome(c, d)) && (palindrome(c, d) % 2 != 0))
+	if (i > l / 2)
 		return (1);
-	if ((c + d) == 1 + (c - 1 - d + palindrome(c, d)) && (palindrome(c, d) % 2 == 0))
-		return (1);
-	if (*(c + d) == *(c - 1 - d + palindrome(c, d)))
-		return (_palindrome(c, d + 1));
-	return (0);
-}	
+	else if (p[i] != p[l - i - 1])
+		return (0);
+	else
+		return (_palindrome(l, i + 1, p));
+}
+/**
+ * is_palindrome - function
+ * @s: pointer
+ *
+ * Return: int
+ */
 int is_palindrome(char *s)
 {
-	return (_palindrome(s, 0));
+	int b;
+	int y;
+
+	b = _strlen_recursion(s);
+	y = _palindrome(b, 0, s);
+	return (y);
 }
