@@ -12,8 +12,9 @@ int palindrome(char *a, int b)
 }
 int _palindrome(char *c, int d)
 {
-	if ((c + d) == c - 1 - d + palindrome(c, d))
+	if ((c + d) == (c - 1 - d + palindrome(c, d)) && (palindrome(c, d) % 2 != 0))
 		return (1);
+	if ((c + d) == 1 + (c - 1 - d + palindrome(c, d)) && (palindrome(c, d) % 2 == 0))
 	if (*(c + d) == *(c - 1 - d + palindrome(c, d)))
 		return (_palindrome(c, d + 1));
 	return (0);
