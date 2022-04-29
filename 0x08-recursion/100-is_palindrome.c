@@ -4,6 +4,18 @@
  * @s: parameter
  * Return: 1 or 0
  */
+/**
+ * palindrome - returns length of string
+ * @a: parameter 
+ * @b: parameter
+ * Return: 1 or 0
+ */
+/**
+ * _palindrome - detects palindrome
+ * @c: parameter
+ * @d: parameter
+ * Return: 1 or 0
+ */
 int palindrome(char *a, int b)
 {
 	if (*(a + 1) != '\0')
