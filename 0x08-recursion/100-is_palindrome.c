@@ -12,14 +12,13 @@ int palindrome(char *a, int b)
 }
 int _palindrome(char *c, int d)
 {
-	if ((c + d) = c - 1 - d + palindrome(c, d))
+	if ((c + d) == c - 1 - d + palindrome(c, d))
 		return (1);
-	if (*(c + d) = *(c - 1 - d + palindrome(c, d))
+	if (*(c + d) == *(c - 1 - d + palindrome(c, d)))
 		return (_palindrome(c, d + 1));
-	else
-		return (0);
+	return (0);
 }	
 int is_palindrome(char *s)
 {
-	return (_palindrome(s, 0);
+	return (_palindrome(s, 0));
 }
