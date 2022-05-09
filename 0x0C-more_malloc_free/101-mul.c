@@ -8,14 +8,17 @@
  */
 int main (int argc, char* argv[])
 {
-	unsigned long i, j;
+	int i, j;
 	unsigned long num;
 
 	if (argc != 3)
-		printf("Error\n");
-	for ( i = 1;i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		printf("Error\n");
+		exit(98);
+	}
+	for ( i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != "\0"; j++)
 		{
 			if (argv[i][j] > 9 || argv[i][j] < 0)
 			{
