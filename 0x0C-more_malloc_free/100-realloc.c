@@ -3,14 +3,14 @@
 /**
  * _realloc - reallocates a pointer with a new size
  * @old_size: old memory size
- * @new_sizeL: new memory size
+ * @new_size: new memory size
  * Return: reallocated pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *a, *s;
-	int i, b;
-	
+	unsigned int i, b;
+
 	a = malloc(old_size);
 	if (new_size == 0)
 	{
