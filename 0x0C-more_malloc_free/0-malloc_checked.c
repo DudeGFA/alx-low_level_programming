@@ -12,7 +12,7 @@ void *malloc_checked(unsigned int b)
 	p = malloc(sizeof(char) * b);
 	if (p == NULL)
 	{
-		free (p);
+		free(p);
 		return (98);
 	}
 	return (p);
