@@ -4,7 +4,7 @@
  * _realloc - reallocates a pointer with a new size
  * @old_size: old memory size
  * @new_size: new memory size
- * ptr: pointer
+ * @ptr: pointer
  * Return: reallocated pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
