@@ -13,11 +13,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	
 	a = malloc(old_size);
 	if (new_size == 0)
+	{
 		free(ptr);
 		return (NULL);
+	}
 	if (ptr == NULL)
+	{
 		ptr = malloc(new_size);
 		return (ptr);
+	}
 	a = ptr;
 	for (b = 0; b < old_size && b < new_size; b++)
 		s[b] = a[b];
