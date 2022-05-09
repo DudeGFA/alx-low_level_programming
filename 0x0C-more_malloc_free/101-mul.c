@@ -8,7 +8,7 @@
  */
 int main (int argc, char* argv[])
 {
-	int i, j;
+	unsigned long i, j;
 	unsigned long num;
 
 	if (argc != 3)
