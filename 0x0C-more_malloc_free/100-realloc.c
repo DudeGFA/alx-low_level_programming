@@ -33,5 +33,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	for (b = 0; b < old_size && b < new_size; b++)
 		s[b] = a[b];
+	free(ptr);
 	return (s);
 }
