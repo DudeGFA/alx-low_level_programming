@@ -12,16 +12,18 @@ int main (int argc, char* argv[])
 	unsigned long num;
 
 	if (argc != 3)
-		printf("ERor\n");
-	for ( i = 0;i < argc; i++)
+		printf("Error\n");
+	for ( i = 1;i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
+			if (argv[i][j] > 9 || argv[i][j] < 0)
 			{
 				printf("Error\n");
 				exit(98);
 			}
+		}
+	}
 	num = atol(argv[1]) * atol(argv[2]);
 	printf("%lu\n", num);
 	return (0);
