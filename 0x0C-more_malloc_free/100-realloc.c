@@ -9,9 +9,8 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *a, *s;
-	unsigned int i, b;
+	unsigned int b;
 
-	a = malloc(old_size);
 	if (new_size == 0)
 	{
 		free(ptr);
