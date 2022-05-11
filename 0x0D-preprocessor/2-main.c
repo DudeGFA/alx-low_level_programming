@@ -1,11 +1,10 @@
 #include "stdio.h"
 /**
  * main - prints file name
- * @argc: no of cl arguments
- * @argv: array of cl arguments
- * Return: void
+ * Return: 0
  */
-void main()
+int main()
 {
 	printf ("%s\n", __FILE__);
+	return (0);
 }
