@@ -5,7 +5,7 @@
  * @argv: array of cl arguments
  * Return: void
  */
-void main(int argc, **char argv[])
+void main()
 {
-	printf ("%s\n", argv[0]);
+	printf ("%s\n", __FILE__);
 }
