@@ -1,3 +1,4 @@
+#include "dog.h"
 /**
  * init_dog - initialises the attributes of struct dog
  * @name: dog's name
@@ -7,6 +8,7 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	
 	struct dog *ptr;
 	ptr = d;
 	ptr->name = name;
