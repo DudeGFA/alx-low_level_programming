@@ -1,6 +1,7 @@
 #include "dog.h"
 /**
  * init_dog - initialises the attributes of struct dog
+ * @d: parameter
  * @name: dog's name
  * @age: dog's age
  * @owner: name of dog's owner
@@ -8,11 +9,11 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	
+
 	struct dog *ptr;
+
 	ptr = d;
 	ptr->name = name;
 	ptr->age = age;
 	ptr->owner = owner;
 }
-	
