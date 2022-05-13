@@ -1,4 +1,4 @@
-#include function_pointer.h
+#include "function_pointers.h"
 /**
  * int_index - returns index of a matching int
  * @array: parameter
