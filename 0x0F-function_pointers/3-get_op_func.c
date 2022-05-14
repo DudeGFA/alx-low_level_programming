@@ -15,13 +15,12 @@ int (*get_op_func(char *s))(int , int )
 	};
 	int i = 0;
 
-	while (i < 6)
+	while (i < 10)
 	{
-		if (ops[i].op == s)
-			return (ops[i].f);
-		i++
+		if (s[0] == ops->op[i])
+			break;
+		i++;
 	}
-	printf("Error\n");
-	exit(99);
+	return (ops[i / 2].f);
 }
 	
