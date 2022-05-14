@@ -6,6 +6,8 @@
  */
 void main(int argc, char *argv[])
 {
+	int p;
+
 	if (argc != 4)
 	{
 		printf(Error\n);
@@ -16,5 +18,6 @@ void main(int argc, char *argv[])
 		printf(Error\n);
 		exit(99);
 	}
-	printf("%d\n",get_op_func(char *s)(atoi(argv[1]), atoi(argv[3])));
+	p = get_op_func(char *s)(atoi(argv[1]), atoi(argv[3]))
+	printf("%d\n", p);
 }
