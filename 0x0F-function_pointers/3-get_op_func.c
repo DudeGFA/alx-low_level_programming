@@ -20,8 +20,8 @@ int (*get_op_func(char *s))(int , int )
 	i = 0;
 	while (i < 5)
 	{
-		if (ops[i].op == argv[1])
-			return (ptr[i].f(argv[0], argv[2]);
+		if (ops[i].op == argv[2])
+			return (ptr[i].f(argv[1], argv[3]));
 	}
 	return (NULL);
 }
