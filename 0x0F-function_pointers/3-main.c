@@ -6,16 +6,15 @@
  */
 void main(int argc, char *argv[])
 {
-	if (argc != 3)
+	if (argc != 4)
 	{
 		printf(Error\n);
 		exit(98);
 	}
-	if (argv[1] != '+' || argv[1] != '-' || argv[1] != '%' || argv[1] != '/' || argv[1] != '*')
+	if (argv[2] != '+' && argv[2] != '-' && argv[2] != '%' && argv[2] != '/' && argv[2] != '*')
 	{
 		printf(Error\n);
 		exit(99);
 	}
-	printf("%d\n",get_op_func(char *s)(atoi(argv[0]), atoi(argv[2])));
+	printf("%d\n",get_op_func(char *s)(atoi(argv[1]), atoi(argv[3])));
 }
-	
