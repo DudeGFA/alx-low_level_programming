@@ -9,7 +9,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
-	unsigned long long int i;
+	unsigned int i;
 	long long int p = 0;
 
 	if (n <= 0)
