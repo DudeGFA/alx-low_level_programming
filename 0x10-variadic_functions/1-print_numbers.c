@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <ctype.h>
+#include "variadic_functions.h"
 /**
  * print_numbers - sums all parameters
  * @n: no of parameters
