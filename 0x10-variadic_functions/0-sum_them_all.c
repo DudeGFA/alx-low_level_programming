@@ -4,11 +4,12 @@
  * sum_them_all - sums all parameters
  * @n: no of parameters
  * Return: sum of parameters
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
-	signed int p = 0;
+	int p = 0;
 
 	if (n <= 0)
 		return (0);
