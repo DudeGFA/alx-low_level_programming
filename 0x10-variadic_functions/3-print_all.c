@@ -13,7 +13,7 @@ void print_char(va_list ap)
 	printf("%c", c);
 }
 /**
- * print_int - prints a char
+ * print_int - prints an int
  * @ap: list of arguments of variadic function
  */
 void print_int(va_list ap)
@@ -65,10 +65,10 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-	while(*(format + i) && format)
+	while (*(format + i) && format)
 	{
 		j = 0;
-		while(j < 4)
+		while (j < 4)
 		{
 			if (*(format + i) == *(ss[j].sign))
 			{
