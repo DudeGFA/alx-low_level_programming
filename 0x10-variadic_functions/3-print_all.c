@@ -8,6 +8,7 @@
 void print_char(va_list ap)
 {
 	char c;
+
 	c = va_arg(ap, int);
 	printf("%c", c);
 }
@@ -64,10 +65,10 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-	while (*(format + i) && format)
+	while(*(format + i) && format)
 	{
 		j = 0;
-		while (j < 4)
+		while(j < 4)
 		{
 			if (*(format + i) == *(ss[j].sign))
 			{
