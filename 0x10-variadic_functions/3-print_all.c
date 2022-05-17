@@ -58,7 +58,7 @@ void print_string(va_list ap)
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	unsigned int i = 0, j;
+	int i = 0, j;
 	char *separator = "";
 	printer ss[] = {
 		{"c", print_char},
@@ -78,6 +78,7 @@ void print_all(const char * const format, ...)
 				printf("%s", separator);
 				ss[j].print(ap);
 				separator = ", ";
+				j -= 1;
 			}
 			j++;
 		}
