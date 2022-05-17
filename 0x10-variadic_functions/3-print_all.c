@@ -78,7 +78,7 @@ void print_all(const char * const format, ...)
 				printf("%s", separator);
 				ss[j].print(ap);
 				separator = ", ";
-				j -= 1;
+				j--;
 			}
 			j++;
 		}
