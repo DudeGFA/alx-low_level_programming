@@ -3,37 +3,36 @@
 #include <stdio.h>
 typedef struct prints_all
 {
-	char *s;
-	void (*print)(va_list arg);
+	char *sign;
+	void (*print)(va_list ap);
 } printer;
-void print_char(va_list arg)
+void print_char(va_list ap)
 {
 	char c;
-	c = va_arg(arg, int);
+	c = va_arg(ap, int);
 	printf("%c", c);
 }
-void print_int(va_list arg)
+void print_int(va_list ap)
 {
-	char d;
-	d = va_arg(arg, int);
+	int d;
+	d = va_arg(ap, int);
 	printf("%d", d);
 }
-void print_float(va_list arg)
+void print_float(va_list ap)
 {
-	char e;
-	e = va_arg(arg, double);
+	float e;
+	e = va_arg(ap, double);
 	printf("%f", e);
 }
-void print_string(va_list arg)
+void print_string(va_list ap)
 {
 	char *f;
-	f = va_arg(arg, char*);
+	f = va_arg(ap, char*);
 	printf("%s", f);
 }
 /**
  * print_all - print all parameters
- * @n: no of parameters
- * @separator: string seperating parameters
+ * @format: no of parameters
  * Return: void
  */
 void print_all(const char * const format, ...)
@@ -49,12 +48,12 @@ void print_all(const char * const format, ...)
 	};
 	
 	va_start(ap, format);
-	while(format[i])
+	while(*(format + i) && format)
 	{
 		j = 0;
 		while(j < 4)
 		{
-			if (format[i] == ss[j].s)
+			if (*(format + i) == *(ss[j].sign))
 			{
 				printf("%s", separator);
 				ss[j].print(ap);
