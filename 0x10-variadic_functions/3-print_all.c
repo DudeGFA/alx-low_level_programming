@@ -2,16 +2,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * struct prints_all - prints_all
- * @sign: represents data type
- * @print: a pointer function
- */
-typedef struct prints_all
-{
-	char *sign;
-	void (*print)(va_list ap);
-} printer;
-/**
  * print_char - prints a char
  * @ap: list of arguments of variadic function
  */
@@ -28,6 +18,7 @@ void print_char(va_list ap)
 void print_int(va_list ap)
 {
 	int d;
+
 	d = va_arg(ap, int);
 	printf("%d", d);
 }
@@ -38,6 +29,7 @@ void print_int(va_list ap)
 void print_float(va_list ap)
 {
 	float e;
+
 	e = va_arg(ap, double);
 	printf("%f", e);
 }
@@ -48,6 +40,7 @@ void print_float(va_list ap)
 void print_string(va_list ap)
 {
 	char *f;
+
 	f = va_arg(ap, char*);
 	if (f == NULL)
 		printf("(nil)");
@@ -69,12 +62,12 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{"s", print_string}
 	};
-	
+
 	va_start(ap, format);
-	while(*(format + i) && format)
+	while (*(format + i) && format)
 	{
 		j = 0;
-		while(j < 4)
+		while (j < 4)
 		{
 			if (*(format + i) == *(ss[j].sign))
 			{
