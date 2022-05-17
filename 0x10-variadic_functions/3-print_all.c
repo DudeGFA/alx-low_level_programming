@@ -44,7 +44,10 @@ void print_string(va_list ap)
 
 	f = va_arg(ap, char*);
 	if (f == NULL)
+	{
 		printf("(nil)");
+		return;
+	}
 	printf("%s", f);
 }
 /**
