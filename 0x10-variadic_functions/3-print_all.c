@@ -40,7 +40,6 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	unsigned int i = 0, j;
-	char *p;
 	char *separator = "";
 	printer ss[] = {
 		{"c", print_char},
@@ -50,11 +49,11 @@ void print_all(const char * const format, ...)
 	};
 	
 	va_start(ap, format);
-	p = va_arg(ap, char*);
 	while(format[i])
 	{
 		j = 0;
 		while(j < 4)
+		{
 			if (format[i] == ss[j].s)
 			{
 				printf("%s", separator);
@@ -62,6 +61,7 @@ void print_all(const char * const format, ...)
 				separator = ", ";
 			}
 			j++;
+		}
 		i++;
 	}
 	va_end(ap);
