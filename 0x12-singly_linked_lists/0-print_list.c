@@ -2,9 +2,9 @@
 #include <stdio.h>
 /**
  *print_list - prints the members of a list
- * 
- *h: pointer to a linked list 
- *Return: size_t 
+ *
+ *@h: pointer to a linked list
+ *Return: size_t
  */
 size_t print_list(const list_t *h)
 {
