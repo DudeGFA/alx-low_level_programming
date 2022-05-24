@@ -1,17 +1,24 @@
 #include "lists.h"
+/**
+ * add_node - adds a node to the begn of a list
+ * 
+ * @head: linked list
+ * @str: string 
+ * Return: modified list
+ */
 list_t *add_node(list_t **head, const char *str)
 {
-    char* t = strdup(str);
-    if (t == NULL)
-    {
-        free (t);
+    list_t *add;
+    int k;
+
+    add = malloc(sizeof(list_t));
+    if (add == NULL)
         return (NULL);
-    }
-    /*(*head)->next = malloc(sizeof(list_t));
-    if (((*head)->next) == NULL)
-        free ((*head)->next);
-        return (NULL);*/
-    (*head)->next->str = t;
-    free (t);
+    add->str = strdup(str);
+    for ( k = 0; str[k]; k++)
+    add->len = k;
+    add->next = *head;
+    *head = add;
     return (*head);
+
 }
