@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- *print_list - prints the members of a list
+ *list_len - prints the members of a list
  *
  *@h: pointer to a linked list
  *Return: size_t
