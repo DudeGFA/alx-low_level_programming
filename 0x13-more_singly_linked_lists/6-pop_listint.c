@@ -5,7 +5,7 @@
  * Return: void
  */
 
-int pop_listint(listint_t **head);
+int pop_listint(listint_t **head)
 {
 	listint_t *ptr;
 	int c;
