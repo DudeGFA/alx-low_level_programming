@@ -7,7 +7,7 @@
  * Return: modified list
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
-{	list_t *add, *temp;
+{	listint_t *add, *temp;
 
 	add = malloc(sizeof(listint_t));
 	if (add == NULL)
