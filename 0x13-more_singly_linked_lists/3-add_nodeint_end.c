@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * add_node_end - adds a node to the begn of a list
+ * add_nodeint_end - adds a node to the begn of a list
  *
  * @head: linked list
- * @str: string
+ * @n: param
  * Return: modified list
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
