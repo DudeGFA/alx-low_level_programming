@@ -2,7 +2,7 @@
 
 /**
  * get_nodeint_at_index - prints the value of node at an index
- * @head: head of singly linked list.
+ * @index: head of singly linked list.
  * Return: void
  */
 
