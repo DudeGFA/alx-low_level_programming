@@ -4,6 +4,7 @@
  * insert_nodeint_at_index - inserts node at an index
  * @head: head of singly linked list.
  * @idx: node index
+ * @n: int
  * Return: void
  */
 
@@ -22,7 +23,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		node->n = n;
 		ptr = *head;
-		for (i = 1; i < idx; i++)
+		for (i = 1; i < (idx - 1); i++)
 		{
 			if (ptr != NULL)
 			{
@@ -38,7 +39,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		else
 		{
-			node->next = ptr;
+			node->next = *head;
 			*head = node;
 		}
 		return (node);
