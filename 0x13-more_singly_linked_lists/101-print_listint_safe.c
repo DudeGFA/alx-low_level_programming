@@ -9,14 +9,14 @@
 void free_listp(listp_t **head)
 {
 	listp_t *temp;
-	listp_t *bb;
+	listp_t *curr;
 
 	if (head != NULL)
 	{
-		bb = *head;
-		while ((temp = bb) != NULL)
+		curr = *head;
+		while ((temp = curr) != NULL)
 		{
-			bb = bb->next;
+			curr = curr->next;
 			free(temp);
 		}
 		*head = NULL;
@@ -40,7 +40,9 @@ size_t print_listint_safe(const listint_t *head)
 		new = malloc(sizeof(listp_t));
 
 		if (new == NULL)
+		{
 			exit(98);
+		}
 
 		new->p = (void *)head;
 		new->next = hptr;
