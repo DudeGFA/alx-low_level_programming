@@ -9,7 +9,6 @@ void save_binary(unsigned long int n, int *k, int t)
     if ((n / 2) == 0)
     {
         k[t] = 1;
-        return;
     }
     else
     {
@@ -37,7 +36,7 @@ int get_bit(unsigned long int n, unsigned int index)
     }
     else
     {
-        save_binary(n, k, t );
+        save_binary(n / 2, k, t + 1 );
         k[t] = n % 2;
     }
     return(k[index]);
