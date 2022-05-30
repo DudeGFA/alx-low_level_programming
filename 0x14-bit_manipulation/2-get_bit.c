@@ -37,7 +37,7 @@ int get_bit(unsigned long int n, unsigned int index)
     }
     else
     {
-        save_binary(n / 2, k, t + 1);
+        save_binary(n, k, t );
         k[t] = n % 2;
     }
     return(k[index]);
