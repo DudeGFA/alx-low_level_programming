@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * print_binary - prints an int in binary
- *
+ * save_binary - saves an int in binary
+ * @k: parameter
+ * @t: parametr 
  * @n: parameter
+ * Return: void
  */
 void save_binary(unsigned long int n, int *k, int t)
 {
@@ -16,6 +18,12 @@ void save_binary(unsigned long int n, int *k, int t)
         k[t] = n % 2;
     }
 }
+/**
+ * print_binary - prints an int in binary
+ * @index: parameter
+ * @n: parameter
+ * Return: int
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
     int *k;
