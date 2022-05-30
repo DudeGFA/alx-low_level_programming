@@ -21,10 +21,10 @@ int get_bit(unsigned long int n, unsigned int index)
     int *k;
     int i, t = 0;
 
-    k = malloc(32 * sizeof(int));
+    k = malloc(64 * sizeof(int));
     if (k == NULL)
         return (-1);
-    for (i = 0; i < 32; i++)
+    for (i = 0; i < 64; i++)
         k[i] = 0;
     if (n == 0)
     {
