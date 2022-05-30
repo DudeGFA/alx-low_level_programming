@@ -22,7 +22,7 @@ int get_bit(unsigned long int n, unsigned int index)
     int i, t = 0;
 
     k = malloc(64 * sizeof(int));
-    if (k == NULL)
+    if (k == NULL || index > 63)
         return (-1);
     for (i = 0; i < 64; i++)
         k[i] = 0;
