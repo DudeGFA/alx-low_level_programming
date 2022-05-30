@@ -19,7 +19,7 @@ void save_binary(unsigned long int n, int *k, int t)
 	}
 }
 /**
- * get_binary - prints an int in binary
+ * get_bit - prints an int in binary
  * @index: parameter
  * @n: parameter
  * Return: int
@@ -44,8 +44,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	else
 	{
-		save_binary(n / 2, k, t + 1 );
+		save_binary(n / 2, k, t + 1);
 		k[t] = n % 2;
 	}
-	return(k[index]);
+	return (k[index]);
 }
