@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	ptr = malloc(i * sizeof(int));
 	if (ptr == NULL)
 		return (0);
-	for (k = 0; k < i; k++ )
+	for (k = 0; k < i; k++)
 	{
 		if (b[k] < 48 || b[k] > 49)
 			return (0);
@@ -32,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 		else
 		{
 			pow = 1;
-			for(k = (i - j); k > 1; k--)
+			for (k = (i - j); k > 1; k--)
 				pow = pow * 2;
 			bin += ptr[j] * pow;
 		}
