@@ -1,19 +1,38 @@
 #include "main.h"
+/**
+ * _97 - error message
+ * Return: void
+ */
 void  _97()
 {
 	dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
 	exit(97);
 }
+/**
+ * _98 - error message
+ * @NAME_OF_THE_FILE: file name
+ * Return: void
+ */
 void _98(char *NAME_OF_THE_FILE)
 {
 	dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", NAME_OF_THE_FILE);
 	exit(98);
 }
+/**
+ * _99 - error message
+ * @NAME_OF_THE_FILE: file name
+ * Return: void
+ */
 void _99(char *NAME_OF_THE_FILE)
 {
 	dprintf(STDERR_FILENO,"Error: Can't write to %s\n", NAME_OF_THE_FILE);
 	exit(99);
 }
+/**
+ * _100 - error message
+ * @FD_VALUE: file descriptor
+ * Return: void
+ */
 void _100(int FD_VALUE)
 {
 	if (close(FD_VALUE) < 0)
@@ -23,11 +42,10 @@ void _100(int FD_VALUE)
 	}
 }
 /**
- * read_textfile - reads and writes a textfile
- * to standard output
- * @filename: file name
- * @letters: no of chars to be read and written
- * Return: no of written chars
+ * main - copies a textfile
+ * @argc: no of cl args
+ * @argv: filenames
+ * Return: 1
  */
 int main(int argc, char *argv[])
 {
