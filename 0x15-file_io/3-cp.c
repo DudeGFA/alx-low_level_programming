@@ -3,9 +3,9 @@
  * _97 - error message
  * Return: void
  */
-void  _97()
+void _97()
 {
-	dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 	exit(97);
 }
 /**
@@ -15,7 +15,7 @@ void  _97()
  */
 void _98(char *NAME_OF_THE_FILE)
 {
-	dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", NAME_OF_THE_FILE);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", NAME_OF_THE_FILE);
 	exit(98);
 }
 /**
@@ -25,7 +25,7 @@ void _98(char *NAME_OF_THE_FILE)
  */
 void _99(char *NAME_OF_THE_FILE)
 {
-	dprintf(STDERR_FILENO,"Error: Can't write to %s\n", NAME_OF_THE_FILE);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", NAME_OF_THE_FILE);
 	exit(99);
 }
 /**
@@ -37,7 +37,7 @@ void _100(int FD_VALUE)
 {
 	if (close(FD_VALUE) < 0)
 	{
-		dprintf(STDERR_FILENO,"Error: Can't close fd %d", FD_VALUE);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", FD_VALUE);
 		exit(100);
 	}
 }
@@ -59,9 +59,8 @@ int main(int argc, char *argv[])
 		_98(argv[1]);
 	b = creat(argv[2], 0664);
 	if (b < 0)
-        _99(argv[2]);
-	do
-	{	j = read(fd, buf, 1024);
+		_99(argv[2]);
+	do {	j = read(fd, buf, 1024);
 		if (j < 0)
 			_98(argv[1]);
 		l = write(b, buf, j);
