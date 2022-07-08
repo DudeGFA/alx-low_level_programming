@@ -6,6 +6,7 @@
  * Return: void
  */
 void free_dlistint(dlistint_t *head)
+{
     dlistint_t *prev;
 
     while (head != NULL)
@@ -14,3 +15,4 @@ void free_dlistint(dlistint_t *head)
         head = head->next;
         free(prev);
     }
+}
