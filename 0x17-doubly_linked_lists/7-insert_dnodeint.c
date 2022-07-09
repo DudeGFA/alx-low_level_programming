@@ -5,6 +5,7 @@
  * index of a doubly linked list
  * @h: pointer to head of doubly liked list
  * @n: int
+ * @idx: idx of new node
  * Return: pointer to new node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
