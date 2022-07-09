@@ -4,6 +4,7 @@
  * insert_dnodeint_at_index - inserts new node at an
  * index of a doubly linked list
  * @h: pointer to head of doubly liked list
+ * @n: int
  * Return: pointer to new node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -31,9 +32,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
         curr->next = new;
     if (temp != NULL)
         temp->prev =  new;
-    while ((*h)->prev != NULL && *h != NULL)
+    if (*h != NULL)
     {
-        *h = (*h)->prev;
+        while ((*h)->prev != NULL)
+        {
+            *h = (*h)->prev;
+        }
     }
+    else
+        *h = new;
     return (new);
 }
