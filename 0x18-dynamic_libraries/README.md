@@ -31,6 +31,7 @@ Our mole got us a copy of the program, you can download it [here](https://github
   * Your chances to win the jackpot is 1 in 258,890,850                                                             
   *                                                                                                                 
   * usage: ./gm n1 n2 n3 n4 n5 bonus
+  */
 ~~~
 
 You can’t modify the program gm itself as Master Sysadmin Sylvain (MSS) always checks its [MD5](https://alx-intranet.hbtn.io/rltoken/njnwPTMpc1-RSp5sVEAyfg) before running it
@@ -56,7 +57,7 @@ Before running the gm program, MSS always check the content of the directory
 MSS always exit after running the program gm
 
 TL;DR; This is what is going to happen
-~~~bash
+```bash
 mss@gm_server$ . ./101-make_me_win.sh
 mss@gm_server$ rm 101-make_me_win.sh
 mss@gm_server$ ls -la
@@ -70,4 +71,4 @@ d52e6c18e0723f5b025a75dea19ef365  gm
 mss@gm_server$ ./gm 9 8 10 24 75 9
 --> Please make me win!
 mss@gm_server$ exit
-~~~
+```
