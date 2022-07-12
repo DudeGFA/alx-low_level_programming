@@ -46,5 +46,5 @@ int div(a, b)
  */
 int mod(a, b)
 {
-	return (a // b);
+	return (a % b);
 }
