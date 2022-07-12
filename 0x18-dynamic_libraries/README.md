@@ -6,7 +6,7 @@ Create the dynamic library libdynamic.so containing all the functions listed bel
 mandatory
 Create a script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
 
-2. Let's call C functions from Python
+# 2. Let's call C functions from Python
 #advanced
 I know, you’re missing C when coding in Python. So let’s fix that!
 
@@ -14,12 +14,12 @@ Create a dynamic library that contains C functions that can be called from Pytho
 
 julien@ubuntu:~/0x18$ cat 100-tests.py
 
-3. Code injection: Win the Giga Millions!
+# 3. Code injection: Win the Giga Millions!
 #advanced
 I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot?
 
-Our mole got us a copy of the program, you can download it here. Our mole also gave us a piece of documentation:
-You can’t modify the program gm itself as Master Sysadmin Sylvain (MSS) always checks its MD5 before running it
+Our mole got us a copy of the program, you can download it [here](https://github.com/holbertonschool/0x18.c). Our mole also gave us a piece of documentation:
+You can’t modify the program gm itself as Master Sysadmin Sylvain (MSS) always checks its [MD5](https://alx-intranet.hbtn.io/rltoken/njnwPTMpc1-RSp5sVEAyfg) before running it
 The system is an Linux Ubuntu 16.04
 The server has internet access
 Our mole will be only able to run two commands from a shell script, without being detected by MSS
