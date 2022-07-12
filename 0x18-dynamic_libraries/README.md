@@ -22,6 +22,7 @@ I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 7
 
 Our mole got us a copy of the program, you can download it [here](https://github.com/holbertonschool/0x18.c). Our mole also gave us a piece of documentation:
 
+~~~
 /* Giga Millions program                                                                                    
   * Players may pick six numbers from two separate pools of numbers:                                                
   * - five different numbers from 1 to 75 and                                                                       
@@ -30,6 +31,7 @@ Our mole got us a copy of the program, you can download it [here](https://github
   * Your chances to win the jackpot is 1 in 258,890,850                                                             
   *                                                                                                                 
   * usage: ./gm n1 n2 n3 n4 n5 bonus
+~~~
 
 You can’t modify the program gm itself as Master Sysadmin Sylvain (MSS) always checks its [MD5](https://alx-intranet.hbtn.io/rltoken/njnwPTMpc1-RSp5sVEAyfg) before running it
 
