@@ -16,7 +16,7 @@ int add(a, b)
  */
 int sub(a, b)
 {
-	return (a - b)
+	return (a - b);
 }
 /**
  * mul - multiplies two ints
