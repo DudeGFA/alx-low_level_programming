@@ -34,7 +34,7 @@ int mul(a, b)
  * @b: second int
  * Return: a / b
  */
-int div(a, b);
+int div(a, b)
 {
 	return (a / b);
 }
